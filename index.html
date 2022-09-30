@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: system-ui;
+  background-image: url(https://images.pexels.com/photos/237464/pexels-photo-237464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  
+}
+h1{
+    color:plum;
+    font-family: 'Bungee Spice', cursive;
+}
+#audio{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    /* grid-row-start: 3; */
+    margin: 176px;
+    padding: 68px;
+    height: 244px;
+    width: 1091px;
+}
+input{
+    height: 76px;
+    width: 151px;
+    margin: 38px;
+    font-size: 40px;
+    border-radius: 22px;
+    font-family: cursive;
+    font-weight: bolder;
+   
+}
+
+</style>
+<body>
+ <div>
+    <h1> Drum kit</h1>
+ </div>
+ 
+    <audio id="clap">
+        <source src="clap.wav" type="audio/wav">
+    </audio>
+    <audio id="hihat">
+        <source src="hihat.wav" type="audio/wav">
+    </audio>
+    <audio id="kick">
+        <source src="kick.wav" type="audio/wav">
+    </audio>
+    <audio id="ride">
+        <source src="ride.wav" type="audio/wav">
+    </audio>
+    <audio id="snare">
+        <source src="snare.wav" type="audio/wav">
+    </audio>
+    <audio id="tink">
+        <source src="tink.wav" type="audio/wav">
+    </audio>
+    <audio id="tom">
+        <source src="tom.wav" type="audio/wav">
+    </audio>
+
+
+   
+ <div id="audio">
+    <input type="button" id="clap" value="clap" onclick="PlaySound()">
+    <input type="button" id="hihat" value="hihat" onclick="hihat()">
+    <input type="button" id="kick" value="kick" onclick="kick()">
+    <input type="button" id="ride" value="ride" onclick="ride()">
+    <input type="button" id="snare" value="snare" onclick="snare()">
+    <input type="button" id="tink" value="tink" onclick="tink()">
+    <input type="button" id="tom" value="tom" onclick="tom()">
+
+</div>
+</body>
+<script>
+   function playMusic(){
+    var x = document.getElementById("clap");
+    x.play();
+   }
+    function PlaySound() {
+    var audio = new Audio('clap.wav');
+    // audio.loop = false;
+    audio.play(); 
+}
+function hihat(){
+    var y= document.getElementById("hihat");
+    y.play()
+    console.log(y);
+    console.log("hihat run ho gya");
+}
+function kick(){
+    var y= document.getElementById("kick");
+    y.play()
+    console.log(y);
+    console.log("kick run ho gya");
+}
+function ride(){
+    var y= document.getElementById("ride");
+    y.play()
+    console.log(y);
+    console.log("ride run ho gya");
+}
+function snare(){
+    var y= document.getElementById("snare");
+    y.play()
+    console.log(y);
+    console.log("snare run ho gya");
+}
+function tink(){
+    var y= document.getElementById("tink");
+    y.play()
+    console.log(y);
+    console.log("tink run ho gya");
+}
+function tom(){
+    var y= document.getElementById("tom");
+    y.play()
+    console.log(y);
+    console.log("tom run ho gya");
+}
+
+</script>
+</html>
